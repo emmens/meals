@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Lasagne"
+  },
+  {
+    "id": 2,
+    "name": "Ratattoulli"
+  },
+  {
+    "id": 3,
+    "name": "Quiches Lorraine"
+  },
+  {
+    "id": 4,
+    "name": "Bangers & Mash"
+  },
+  {
+    "id": 5,
+    "name": "Pork Loin"
+  },
+  {
+    "id": 6,
+    "name": "Chicken Fried Rice"
+  },
+  {
+    "id": 7,
+    "name": "Steak & Chips"
+  },
+  {
+    "id": 8,
+    "name": "Tuna Pasta Salad"
+  },
+  {
+    "id": 9,
+    "name": "Chicken and Mushroom Pie"
+  },
+  {
+    "id": 10,
+    "name": "Pizza"
+  }
+]
