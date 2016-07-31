@@ -1,7 +1,14 @@
 <h1>{{title}}</h1>
 <h2>My Meals</h2>
-<ul class="meals">
-  <li ng-repeat="meal in meals">
+<ul class="meals" >
+  <li ng-repeat="meal in meals"
+      ng-click="onSelect(meal)">
       <span class="badge">{{meal.id}}</span> {{meal.name}}
   </li>
 </ul>
+<div ng-if="selectedMeal">
+  <h2>
+    {{selectedMeal.name | uppercase}} is my meal
+  </h2>
+  <button ng-click="gotoDetail(selectedMeal)">View Details</button>
+</div>

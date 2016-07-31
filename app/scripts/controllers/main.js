@@ -8,7 +8,7 @@
  * Controller of the mealsApp
  */
 angular.module('mealsApp')
-  .controller('MainCtrl', function ($scope, $http) {
+  .controller('MainCtrl', function ($scope, $http, $location) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -16,23 +16,18 @@ angular.module('mealsApp')
     ];
 
     $http.get('meals.json').then(function(response) {
-        self.phones = response.data;
+        $scope.meals = response.data;
       });
 
 
-    $scope.title = 'Hello';
-    $scope.meals = [
-      {
-        id: 1,
-        name: 'Pork'
-      },
-      {
-        id: 2,
-        name: 'Beef'
-      },
-      {
-        id: 3,
-        name: 'Lamb'
-      }
-    ];
+    $scope.title = 'Tour of Meals';
+
+    $scope.onSelect = function(meal) {
+      $scope.selectedMeal = meal;
+    };
+
+    $scope.gotoDetail = function(meal) {
+      $location.path( '/meals/' + meal.id);
+    };
+
   });
