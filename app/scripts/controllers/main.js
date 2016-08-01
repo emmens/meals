@@ -19,7 +19,6 @@ angular.module('mealsApp')
         $scope.meals = response.data;
       });
 
-
     $scope.title = 'Tour of Meals';
 
     $scope.onSelect = function(meal) {

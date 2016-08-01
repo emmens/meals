@@ -29,7 +29,9 @@ angular.module('mealsApp', [
     controllerAs: 'about'
   })
   .when('/meals/:mealId', {
-    templateUrl: 'views/meal-detail.html'
+    templateUrl: 'views/meal-detail.html',
+    controller: 'MealDetailCtrl',
+    controllerAs: 'meal-detail'
   })
   .otherwise({
     redirectTo: '/'

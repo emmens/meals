@@ -1,1 +1,9 @@
-<p>Helllo!</p>
+<div ng-if="meal">
+  <h2>{{meal.name}} details!</h2>
+  <div><label>id: </label>{{meal.id}}</div>
+  <div>
+    <label>name: </label>
+    <input ng-model="meal.name" placeholder="name"/>
+  </div>
+</div>
+<button ng-click="goBack()">Back</button>
